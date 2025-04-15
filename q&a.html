@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Labbayku</title>
+</head>
+<body>
+    <div class="NA d-none d-md-flex">
+        <div class="alamat py-2"><img width="20px" height="20px" src="assets/alamat.png" alt=""> <p style="font-size: 12px;">Jl.Radin Inten II No 62 Duren Sawit - Jakarta Timur</p></div>
+        <div class="call py-2">
+          <img width="20px" height="15px" src="assets/call.png" style="padding-right: 3px;" alt="">
+          <p style="font-size: 12px;">
+            <a href="https://api.whatsapp.com/send/?phone=628111532000&text&type=phone_number&app_absent=0" target="_blank" style="text-decoration: none; color: inherit;">
+              Konsultasi Umroh
+            </a>
+          </p>
+        </div>
+        <div class="call py-2"><img width="20px" height="15px" src="assets/email.png" style="padding-right: 3px;" alt=""> <p style="font-size: 12px;">Labbayku@gmail.com</p></div>
+    </div> 
+    
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(138,141,114);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/labbayku.png" alt="Bootstrap" width="230" height="90">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white; font-weight: bold;" href="index.html">Home</a>
+                  </li>
+              <li class="nav-item ps-3">
+                <a class="nav-link" style="color: white; font-weight: bold;" href="halaltour.html">Halal Tour</a>
+              </li>
+              <li class="nav-item dropdown ps-3">
+                <a class="nav-link dropdown-toggle" style="color: white; font-weight: bold;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Artikel
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Umrah & Haji Khusus</a></li>
+                    <li><a class="dropdown-item" href="#">Destinasi Saudi</a></li>
+                    <li><a class="dropdown-item" href="#">Destinasi Singapura</a></li>
+                    <li><a class="dropdown-item" href="#">Destinasi Malaysia</a></li>
+                    <li><a class="dropdown-item" href="#">Destinasi Jepang</a></li>
+                    <li><a class="dropdown-item" href="#">Destinasi Turki</a></li>
+                    <li><a class="dropdown-item" href="#">Destinasi Dubai</a></li>
+                    <li><a class="dropdown-item" href="#">Destinasi Thailand</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ps-3">
+                <a class="nav-link" style="color: white; font-weight: bold;" href="tentangkami.html">Tentang Kami</a>
+              </li>
+              <li class="nav-item ps-3"></li>
+                <a class="nav-link" style="color: white; font-weight: bold;" href="q&a.html">Labbayku Q&A</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" onsubmit="searchFunction(event)">
+              <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" style="background-color: rgb(179,201,71);" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid d-flex justify-content-between" style="background-color: rgb(250,250,250);">
+        <div>
+            <h4 class="fw-normal mt-2 ms-4">LABBAYKU Q&A</h4>
+        </div>
+        <div class="d-flex mt-3 me-4" style="font-size: 13px; gap: 5px;">
+            <p>
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    Home
+                </a>
+            </p>
+            <p>
+            <i class="bi bi-arrow-right" style="color: rgb(139,143,114);"></i>
+            </p>
+            <p>LABBAYKU Q&A</p>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h4 class="mt-2 ms-4 fw-bold" style="color: black;">Tentang Labbayku</h4>
+        <h5 class="ms-5 fst-italic fw-bold">Q: Apa itu Labbayku?</h5>
+        <h5 class="ms-5 fst-italic fw-normal"><strong>A:</strong> Labbayku adalah merek dagang resmi dari PT Labbayk Haramain Travel yang berdiri sejak 18 November 2022. Kami adalah biro perjalanan wisata yang terdaftar secara sah di Indonesia, dengan fokus utama pada penyediaan paket Umrah dan Halal Tour berkualitas.</h5>
+        <h5 class="ms-5 mt-4 fst-italic fw-bold">Q: Apakah Labbayku merupakan perusahaan yang diakui secara hukum?</h5>
+        <h5 class="ms-5 fst-italic fw-normal"><strong>A:</strong> Ya, Labbayku telah terdaftar di Kementerian Hukum dan Hak Asasi Manusia (Kemenkumham) dengan Nomor AHU-0087144.AH.01.01.Tahun 2022. Kami juga memiliki Nomor Induk Berusaha (NIB) 3005230074607, yang mengesahkan kami sebagai biro perjalanan wisata.</h5>
+    </div>
+    <div class="container-fluid mt-5">
+        <h4 class="mt-2 ms-4 fw-bold" style="color: black;">Layanan Kami</h4>
+        <h5 class="ms-5 fst-italic fw-bold">Q: Layanan apa saja yang ditawarkan oleh Labbayku?</h5>
+        <h5 class="ms-5 fst-italic fw-normal"><strong>A:</strong>  Kami menawarkan berbagai layanan, termasuk paket Umrah, program Umrah khusus (seperti Umrah Ramadhan), dan paket Halal Tour ke negara-negara Islam. Layanan kami dirancang untuk memenuhi kebutuhan spiritual dan perjalanan Anda dengan fokus pada kualitas dan harga terjangkau.</h5>
+        <h5 class="ms-5 mt-4 fst-italic fw-bold">Q: Apa keuntungan memilih Labbayku?</h5>
+        <h5 class="ms-5 fst-italic fw-normal"><strong>A:</strong> Dengan memilih Labbayku, Anda akan mendapatkan manfaat dari komitmen kami terhadap kepercayaan dan integritas, layanan yang sesuai syariat, dukungan ramah 24/7, serta paket Halal Tour yang dirancang untuk memberikan pengalaman religi dan eksplorasi budaya yang bermakna.</h5>
+        <h5 class="ms-5 mt-4 fst-italic fw-bold">Q: Akomodasi seperti apa yang disediakan oleh Labbayku?</h5>
+        <h5 class="ms-5 fst-italic fw-normal"><strong>A:</strong> Kami menyediakan akomodasi yang nyaman di hotel berbintang 3 hingga 5, memastikan kenyamanan Anda selama perjalanan yang sesuai dengan prinsip-prinsip perjalanan Halal.</h5>
+    </div>
+    <div class="container-fluid mt-5">
+        <h4 class="mt-2 ms-4 fw-bold" style="color: black;">Umrah dan Halal Tour</h4>
+        <h5 class="ms-5 fst-italic fw-bold">Q: Apa yang membuat paket Umrah Labbayku istimewa?</h5>
+        <h5 class="ms-5 fst-italic fw-normal"><strong>A:</strong>  Paket Umrah kami dirancang dengan sangat teliti sesuai dengan prinsip-prinsip syariat Islam. Kami menyediakan tour leader (TL) dan Muthawif bersertifikasi untuk membimbing Anda selama menjalankan ibadah, serta layanan lengkap termasuk pengurusan visa, transportasi, dan lainnya.</h5>
+        <h5 class="ms-5 mt-4 fst-italic fw-bold">Q: Bisakah saya menggabungkan Umrah dengan wisata lainnya?</h5>
+        <h5 class="ms-5 fst-italic fw-normal"><strong>A:</strong> Ya, kami menawarkan paket Umrah khusus yang bisa digabungkan dengan wisata ke negara-negara Islam lainnya. Misalnya, Anda bisa bergabung dengan paket Umrah plus Halal Tour kami yang mencakup kunjungan ke Turki, Dubai, Jepang, dan lainnya.</h5>
+        <h5 class="ms-5 mt-4 fst-italic fw-bold">Q: Destinasi apa saja yang termasuk dalam paket Halal Tour?</h5>
+        <h5 class="ms-5 fst-italic fw-normal"><strong>A:</strong> Paket Halal Tour kami mencakup perjalanan ke Jepang, Turki, Malaysia, Singapura, dan lainnya. Setiap paket mencakup tiket pesawat pulang pergi, akomodasi di hotel yang ramah Halal, transportasi pribadi ber-AC, dan pemandu lokal.</h5>
+    </div>
+    <div class="container-fluid mt-5">
+        <h4 class="mt-2 ms-4 fw-bold" style="color: black;">Pemesanan dan Pembayaran</h4>
+        <h5 class="ms-5 fst-italic fw-bold">Q: Bagaimana cara memesan paket tour atau Umrah?</h5>
+        <h5 class="ms-5 fst-italic fw-normal"><strong>A:</strong> Anda dapat dengan mudah memesan paket yang Anda inginkan dengan mengunjungi website kami dan memilih paket yang sesuai. Atau, Anda juga bisa menghubungi tim layanan pelanggan kami untuk mendapatkan bantuan.</h5>
+        <h5 class="ms-5 mt-4 fst-italic fw-bold">Q: Metode pembayaran apa saja yang diterima?</h5>
+        <h5 class="ms-5 fst-italic fw-normal"><strong>A:</strong> Kami menerima pembayaran melalui transfer bank ke rekening resmi BSI kami: 7666 666 946 a.n PT Labbayk Haramain Travel. Untuk detail lebih lanjut mengenai metode pembayaran, silakan lihat halaman pemesanan kami.</h5>
+    </div>
+    <div class="container-fluid mt-5 mb-5">
+        <h4 class="mt-2 ms-4 fw-bold" style="color: black;">Dukungan Pelanggan</h4>
+        <h5 class="ms-5 fst-italic fw-bold">Q: Apa yang harus saya lakukan jika memiliki pertanyaan lain?</h5>
+        <h5 class="ms-5 fst-italic fw-normal"><strong>A:</strong> Jika Anda memiliki pertanyaan lebih lanjut, Anda dapat menghubungi tim layanan pelanggan kami yang siap melayani 24/7. Hubungi Rudi Saputra di (+62 811-1532-000), Ali Anshar di (+966 54-5958-120), atau Habib Fahris di (+62 856-8536-687). Kami siap membantu!</h5>
+        <h5 class="ms-5 mt-4 fst-italic fw-bold">Q: Jam operasional kantor Labbayku?</h5>
+        <h5 class="ms-5 fst-italic fw-normal"><strong>A:</strong> Kantor kami beroperasi Senin hingga Jumat, pukul 08:00 hingga 17:00 WIB. Anda juga bisa mengunjungi kami di Jl. Radin Inten II No.62, RT.6/RW.14, Duren Sawit, Jakarta Timur.</h5>
+    </div>
+
+    <div class="container-fluid" style="background-color: rgb(40,49,61);">
+        <div class="container text-white d-flex align-items-center" style="font-size: 13px; gap: 3px;">
+            <p class="mt-3">Copyright © 2024</p>
+            <p class="mt-3" style="color: grey; cursor: pointer;">
+            <a href="https://labbayku.com" target="_blank" style="text-decoration: none; color: inherit;">
+                Labbayku
+            </a>
+            </p>
+            <p class="mt-3">All rights reserved.</p>
+        </div>
+        </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        delay: 100,
+    });
+</script>
+</body>
+</html>

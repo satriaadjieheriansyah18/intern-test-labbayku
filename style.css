@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+}
+
+.alamat, .call{
+   display: flex; 
+}
+
+
+.NA{
+   background-color: rgb(241,245,248); 
+   height: 40px;
+   width: 100%;
+   display: flex;
+   gap: 20px;
+   /* justify-content:space-around; */
+   /* border: 3px black solid; */
+}
+
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon {
+   background-color: black; /* Mengubah warna icon menjadi hitam */
+ }
+
+.nohov:hover{
+   color: rgb(139,143,114);
+   
+}
+
+.hover1{
+  font-size: 14px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  text-decoration: none;
+  color: inherit;
+}
+.hover1:hover{
+   color: rgb(179,201,71);
+}
+
+.batten{
+   cursor: pointer;
+   transition: transform 0.3s ease, height 0.3s ease;
+}
+.batten:hover{
+   transform: scale(1.05);
+}
+
+.CE{
+   cursor: pointer;
+   transition: transform 0.3s ease, height 0.3s ease;
+}
+.CE:hover{
+   transform: scale(1.05);
+}
+
+.custom-shadow {
+   box-shadow: 0px 10px 8px grey; /* Atur warna dan intensitas shadow */
+ }
+
+.SC{
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.SC:hover{
+  box-shadow: 2px 2px 15px grey;
+}
+ 
+ @media (max-width: 768px) {
+   .custom-shadow {
+     box-shadow: 0px 2px 4px grey; /* Shadow lebih ringan di layar kecil */
+   }
+ }
+ 
+
+ @media (max-width: 768px) {
+   img.custom-img {
+     margin-top: 30px;
+     width: 100%; /* Mengatur gambar agar memenuhi lebar layar */
+     height: auto; /* Mempertahankan rasio aspek */
+   }
+ }
+
+ /* Ukuran gambar tetap untuk layar yang lebih besar */
+ @media (min-width: 769px) {
+   img.custom-img {
+     width: 340px; /* Ukuran tetap untuk layar besar */
+     height: 440px;
+   }
+ }
+
+ @media (max-width: 768px) {
+  .labbay {
+    width: 100%; /* Mengatur gambar agar memenuhi lebar layar */
+    height: auto; /* Mempertahankan rasio aspek */
+  }
+}
